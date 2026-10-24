@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+.header {
+    background: #2563eb;
+    color: white;
+    padding: 55px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 38px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: #e0eaff;
+    font-size: 17px;
+}
+
+.profiles-section {
+    padding: 45px 0 60px;
+}
+
+.profiles-section h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.section-description {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.users-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.user-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.avatar {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #1d4ed8;
+    display: grid;
+    place-items: center;
+    font-size: 23px;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.user-card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.user-email {
+    color: #2563eb;
+    font-size: 14px;
+    overflow-wrap: anywhere;
+    margin-bottom: 14px;
+}
+
+.user-bio {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+.status-message {
+    color: #6b7280;
+    grid-column: 1 / -1;
+}
+
+.error-message {
+    color: #dc2626;
+}
+
+.footer {
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    .header {
+        padding: 40px 0;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .profiles-section {
+        padding-top: 30px;
+    }
+}
